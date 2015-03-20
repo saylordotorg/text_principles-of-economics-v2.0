@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link href="shared/bookhub.css" rel="stylesheet" type="text/css">
+  <title>Time and Interest Rates</title>
+</head>
+<body>
+
+  
+  <div id=navbar-top class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s15-04-review-and-practice.html"><img src="shared/images/batch-left.png"></a> <a href="s15-04-review-and-practice.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s16-02-interest-rates-and-capital.html">Next Section</a> <a href="s16-02-interest-rates-and-capital.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  <div id="book-content">
+    <div class="section" id="rittenberg-ch13_s02" condition="start-of-chunk" version="5.0" lang="en">
+    <h2 class="title editable block">
+<span class="title-prefix">13.1</span> Time and Interest Rates</h2>
+    <div class="learning_objectives editable block" id="rittenberg-ch13_s02_n01">
+        <h3 class="title">Learning Objectives</h3>
+        <ol class="orderedlist" id="rittenberg-ch13_s02_l01">
+            <li>Define interest and the interest rate.</li>
+            <li>Describe and show algebraically how to compute present value.</li>
+            <li>List and explain the factors that affect what the present value of some future payment will be.</li>
+        </ol>
+    </div>
+    <p class="para editable block" id="rittenberg-ch13_s02_p01">Time, the saying goes, is nature’s way of keeping everything from happening all at once. And the fact that everything does not happen at once introduces an important complication in economic analysis.</p>
+    <p class="para editable block" id="rittenberg-ch13_s02_p02">When a company decides to use funds to install capital that will not begin to produce income for several years, it needs a way to compare the significance of funds spent now to income earned later. It must find a way to compensate financial investors who give up the use of their funds for several years, until the project begins to pay off. How can payments that are distributed across time be linked to one another? Interest rates are the linkage mechanism; we shall investigate how they achieve that linkage in this section.</p>
+    <div class="section" id="rittenberg-ch13_s02_s01">
+        <h2 class="title editable block">The Nature of Interest Rates</h2>
+        <p class="para editable block" id="rittenberg-ch13_s02_s01_p01">Consider a delightful problem of choice. Your Aunt Carmen offers to give you $10,000 now or $10,000 in one year. Which would you pick?</p>
+        <p class="para editable block" id="rittenberg-ch13_s02_s01_p02">Most people would choose to take the payment now. One reason for that choice is that the average level of prices is likely to rise over the next year. The purchasing power of $10,000 today is thus greater than the purchasing power of $10,000 a year hence. There is also a question of whether you can count on receiving the payment. If you take it now, you have it. It is risky to wait a year; who knows what will happen?</p>
+        <p class="para editable block" id="rittenberg-ch13_s02_s01_p03">Let us eliminate both of these problems. Suppose that you are confident that the average level of prices will not change during the year, and you are absolutely certain that if you choose to wait for the payment, you and it will both be available. Will you take the payment now or wait?</p>
+        <p class="para editable block" id="rittenberg-ch13_s02_s01_p04">Chances are you would <em class="emphasis">still</em> want to take the payment now. Perhaps there are some things you would like to purchase with it, and you would like them sooner rather than later. Moreover, if you wait a year to get the payment, you will not be able to use it while you are waiting. If you take it now, you can choose to spend it now or wait.</p>
+        <p class="para editable block" id="rittenberg-ch13_s02_s01_p05">Now suppose Aunt Carmen wants to induce you to wait and changes the terms of her gift. She offers you $10,000 now or $11,000 in one year. In effect, she is offering you a $1,000 bonus if you will wait a year. If you agree to wait a year to receive Aunt Carmen’s payment, you will be accepting her <em class="emphasis">promise</em> to provide funds instead of the funds themselves. Either will increase your <span class="margin_term"><a class="glossterm">wealth</a><span class="glossdef">The sum of assets less liabilities.</span></span>, which is the sum of all your assets less all your liabilities. <span class="margin_term"><a class="glossterm">Assets</a><span class="glossdef">Anything of value.</span></span> are anything you have that is of value; <span class="margin_term"><a class="glossterm">liabilities</a><span class="glossdef">Obligations to make future payments.</span></span> are obligations to make future payments. Both a $10,000 payment from Aunt Carmen now and her promise of $11,000 in a year are examples of assets. The alternative to holding wealth is to consume it. You could, for example, take Aunt Carmen’s $10,000 and spend it for a trip to Europe, thus reducing your wealth. By making a better offer—$11,000 instead of $10,000—Aunt Carmen is trying to induce you to accept an asset you will not be able to consume during the year.</p>
+        <p class="para block" id="rittenberg-ch13_s02_s01_p06">The $1,000 bonus Aunt Carmen is offering if you will wait a year for her payment is interest. In general, <span class="margin_term"><a class="glossterm">interest</a><span class="glossdef">A payment made to people who agree to postpone their use of wealth.</span></span> is a payment made to people who agree to postpone their use of wealth. The <span class="margin_term"><a class="glossterm">interest rate</a><span class="glossdef">The opportunity cost of using wealth today, expressed as a percentage of the amount of wealth whose use is postponed.</span></span> represents the opportunity cost of using wealth today, expressed as a percentage of the amount of wealth whose use is postponed. Aunt Carmen is offering you $1,000 if you will pass up the $10,000 today. She is thus offering you an interest rate of 10% (<span class="inlineequation"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="rittenberg_ch13_s01_m001" display="inline">
+		 <mi>$</mi><mn>1,000</mn><mo>/</mo><mi>$</mi><mn>10,000</mn><mo>=</mo><mn>0.1</mn><mo>=</mo><mn>10</mn><mtext>%</mtext>
+		</math>
+</span>).</p>
+        <p class="para block" id="rittenberg-ch13_s02_s01_p07">Suppose you tell Aunt Carmen that, given the two options, you would still rather have the $10,000 today. She now offers you $11,500 if you will wait a year for the payment—an interest rate of 15% (<span class="inlineequation"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="rittenberg_ch13_s01_m002" display="inline">
+		 <mi>$</mi><mn>1,500</mn><mo>/</mo><mi>$</mi><mn>10,000</mn><mo>=</mo><mn>0.15</mn><mo>=</mo><mn>15</mn><mtext>%</mtext>
+		</math>
+</span>). The more she pays for waiting, the higher the interest rate.</p>
+        <p class="para editable block" id="rittenberg-ch13_s02_s01_p08">You are probably familiar with the role of interest rates in loans. In a loan, the borrower obtains a payment now in exchange for promising to repay the loan in the future. The lender thus must postpone his or her use of wealth until the time of repayment. To induce lenders to postpone their use of their wealth, borrowers offer interest. Borrowers are willing to pay interest because it allows them to acquire the sum now rather than having to wait for it. And lenders require interest payments to compensate them for postponing their own use of their wealth.</p>
+    </div>
+    <div class="section" id="rittenberg-ch13_s02_s02">
+        <h2 class="title editable block">Interest Rates and Present Value</h2>
+        <p class="para editable block" id="rittenberg-ch13_s02_s02_p01">We saw in the previous section that people generally prefer to receive a payment of some amount today rather than wait to receive that same amount later. We may conclude that the value today of a payment in the future is less than the dollar value of the future payment. An important application of interest rates is to show the relationship between the current and future values of a particular payment.</p>
+        <p class="para editable block" id="rittenberg-ch13_s02_s02_p02">To see how we can calculate the current value of a future payment, let us consider an example similar to Aunt Carmen’s offer. This time you have $1,000 and you deposit it in a bank, where it earns interest at the rate of 10% per year.</p>
+        <p class="para editable block" id="rittenberg-ch13_s02_s02_p03">How much will you have in your bank account at the end of one year? You will have the original $1,000 plus 10% of $1,000, or $1,100:</p>
+        <span class="informalequation block">
+		<math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="rittenberg_ch13_s01_m003" display="block">
+		 <mrow>
+		  <mi>$</mi><mn>1,000</mn><mo>+</mo><mo stretchy="false">(</mo><mn>0.10</mn><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mi>$</mi><mn>1,000</mn><mo stretchy="false">)</mo><mo>=</mo><mi>$</mi><mn>1,100</mn>
+		 </mrow>
+		</math>
+</span>
+        <p class="para editable block" id="rittenberg-ch13_s02_s02_p04">More generally, if we let <em class="emphasis">P</em><sub class="subscript">0</sub> equal the amount you deposit today, <em class="emphasis">r</em> the percentage rate of interest, and <em class="emphasis">P</em><sub class="subscript">1</sub> the balance of your deposit at the end of 1 year, then we can write:</p>
+        <div class="equation block" id="rittenberg-ch13_s02_s02_eq01">
+		<p class="title editable"><span class="title-prefix">Equation 13.1</span> </p>
+		<math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="rittenberg_ch13_s01_m004" display="block">
+		 <msub>
+		  <mi>P</mi>
+		  <mn>0</mn>
+		 </msub>
+		 <mo>+</mo><mi>r</mi><msub>
+		  <mi>P</mi>
+		  <mn>0</mn>
+		 </msub>
+		 <mo>=</mo><msub>
+		  <mi>P</mi>
+		  <mn>1</mn>
+		 </msub>
+		</math>
+</div>
+        <p class="para editable block" id="rittenberg-ch13_s02_s02_p05">Factoring out the <em class="emphasis">P</em><sub class="subscript">0</sub> term on the left-hand side of <a class="xref" href="#rittenberg-ch13_s02_s02_eq01" xrefstyle="select: label">Equation 13.1</a>, we have:</p>
+        <div class="equation block" id="rittenberg-ch13_s02_s02_eq02">
+		<p class="title editable"><span class="title-prefix">Equation 13.2</span> </p>
+		<math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="rittenberg_ch13_s01_m005" display="block">
+		 <mrow>
+		  <msub>
+		   <mi>P</mi>
+		   <mn>0</mn>
+		  </msub>
+		  <mo stretchy="false">(</mo><mn>1</mn><mo>+</mo><mi>r</mi><mo stretchy="false">)</mo><mo>=</mo><msub>
+		   <mi>P</mi>
+		   <mn>1</mn>
+		  </msub>
+		 </mrow>
+		</math>
+</div>
+        <p class="para editable block" id="rittenberg-ch13_s02_s02_p06"><a class="xref" href="#rittenberg-ch13_s02_s02_eq02" xrefstyle="select: label">Equation 13.2</a> shows how to determine the future value of a payment or deposit made today. Now let us turn the question around. We can ask what <em class="emphasis">P</em><sub class="subscript">1</sub>, an amount that will be available 1 year from now, is worth today. We solve for this by dividing both sides of <a class="xref" href="#rittenberg-ch13_s02_s02_eq02" xrefstyle="select: label">Equation 13.2</a> by (1 + <em class="emphasis">r</em>) to obtain:</p>
+        <div class="equation block" id="rittenberg-ch13_s02_s02_eq03">
+		<p class="title editable"><span class="title-prefix">Equation 13.3</span> </p>
+		<math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="rittenberg_ch13_s01_m006" display="block">
+		 <mrow>
+		  <msub>
+		   <mi>P</mi>
+		   <mtext>0</mtext>
+		  </msub>
+		  <mo>=</mo><mfrac>
+		   <mrow>
+		    <msub>
+		     <mi>P</mi>
+		     <mn>1</mn>
+		    </msub>
+		   </mrow>
+		   <mrow>
+		    <mo stretchy="false">(</mo><mn>1</mn><mo>+</mo><mi>r</mi><mo stretchy="false">)</mo>
+		   </mrow>
+		  </mfrac>
+		 </mrow>
+		</math>
+</div>
+        <p class="para editable block" id="rittenberg-ch13_s02_s02_p07"><a class="xref" href="#rittenberg-ch13_s02_s02_eq03" xrefstyle="select: label">Equation 13.3</a> suggests how we can compute the value today, <em class="emphasis">P</em><sub class="subscript">0</sub>, of an amount <em class="emphasis">P</em><sub class="subscript">1</sub> that will be paid a year hence. An amount that would equal a particular future value if deposited today at a specific interest rate is called the <span class="margin_term"><a class="glossterm">present value</a><span class="glossdef">An amount that would equal a particular future value if deposited today at a specific interest rate.</span></span> of that future value.</p>
+        <p class="para editable block" id="rittenberg-ch13_s02_s02_p08">More generally, the present value of any payment to be received <em class="emphasis">n</em> periods from now =</p>
+        <div class="equation block" id="rittenberg-ch13_s02_s02_eq04">
+		<p class="title editable"><span class="title-prefix">Equation 13.4</span> </p>
+		<math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="rittenberg_ch13_s01_m007" display="block">
+		 <mrow>
+		  <msub>
+		   <mi>P</mi>
+		   <mtext>0</mtext>
+		  </msub>
+		  <mo>=</mo><mfrac>
+		   <mrow>
+		    <msub>
+		     <mi>P</mi>
+		     <mtext>n</mtext>
+		    </msub>
+		   </mrow>
+		   <mrow>
+		    <msup>
+		     <mrow>
+		      <mtext>(1</mtext><mo>+</mo><mtext>r)</mtext>
+		     </mrow>
+		     <mtext>n</mtext>
+		    </msup>
+		   </mrow>
+		  </mfrac>
+		 </mrow>
+		</math>
+</div>
+        <p class="para editable block" id="rittenberg-ch13_s02_s02_p09">Suppose, for example, that your Aunt Carmen offers you the option of $1,000 now or $15,000 in 30 years. We can use <a class="xref" href="#rittenberg-ch13_s02_s02_eq04" xrefstyle="select: label">Equation 13.4</a> to help you decide which sum to take. The present value of $15,000 to be received in 30 years, assuming an interest rate of 10%, is:</p>
+        <span class="informalequation block">
+		<math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="rittenberg_ch13_s01_m008" display="block">
+		 <mrow>
+		  <msub>
+		   <mi>P</mi>
+		   <mtext>0</mtext>
+		  </msub>
+		  <mo>=</mo><mfrac>
+		   <mrow>
+		    <msub>
+		     <mi>P</mi>
+		     <mn>30</mn>
+		    </msub>
+		   </mrow>
+		   <mrow>
+		    <msup>
+		     <mrow>
+		      <mo stretchy="false">(</mo><mn>1</mn><mo>+</mo><mi>r</mi><mo stretchy="false">)</mo>
+		     </mrow>
+		     <mrow>
+		      <mn>30</mn>
+		     </mrow>
+		    </msup>
+		   </mrow>
+		  </mfrac>
+		  <mo>=</mo><mfrac>
+		   <mrow>
+		    <mi>$</mi><mn>15,000</mn>
+		   </mrow>
+		   <mrow>
+		    <msup>
+		     <mrow>
+		      <mo stretchy="false">(</mo><mn>1</mn><mo>+</mo><mn>0.10</mn><mo stretchy="false">)</mo>
+		     </mrow>
+		     <mrow>
+		      <mn>30</mn>
+		     </mrow>
+		    </msup>
+		   </mrow>
+		  </mfrac>
+		  <mo>=</mo><mi>$</mi><mn>859.63</mn>
+		 </mrow>
+		</math>
+</span>
+        <p class="para editable block" id="rittenberg-ch13_s02_s02_p10">Assuming that you could earn that 10% return with certainty, you would be better off taking Aunt Carmen’s $1,000 now; it is greater than the present value, at an interest rate of 10%, of the $15,000 she would give you in 30 years. The $1,000 she gives you now, assuming an interest rate of 10%, in 30 years will grow to:</p>
+        <span class="informalequation block">
+		<math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="rittenberg_ch13_s01_m009" display="block">
+		 <mrow>
+		  <mi>$</mi><mn>1,000</mn><msup>
+		   <mrow>
+		    <mo stretchy="false">(</mo><mn>1</mn><mo>+</mo><mn>0.10</mn><mo stretchy="false">)</mo>
+		   </mrow>
+		   <mrow>
+		    <mn>30</mn>
+		   </mrow>
+		  </msup>
+		  <mo>=</mo><mi>$</mi><mn>17,449.40</mn>
+		 </mrow>
+		</math>
+</span>
+        <p class="para editable block" id="rittenberg-ch13_s02_s02_p11">The present value of some future payment depends on three things.</p>
+        <ol class="orderedlist editable block" id="rittenberg-ch13_s02_s02_l01" numeration="arabic">
+            <li>
+<strong class="emphasis bold">The Size of the Payment Itself.</strong> The bigger the future payment, the greater its present value.</li>
+            <li>
+<strong class="emphasis bold">The Length of the Period Until Payment.</strong> The present value depends on how long a period will elapse before the payment is made. The present value of $15,000 in 30 years, at an interest rate of 10%, is $859.63. But that same sum, if paid in 20 years, has a present value of $2,229.65. And if paid in 10 years, its present value is more than twice as great: $5,783.15. The longer the time period before a payment is to be made, the lower its present value.</li>
+            <li>
+<strong class="emphasis bold">The Rate of Interest.</strong> The present value of a payment of $15,000 to be made in 20 years is $2,229.65 if the interest rate is 10%; it rises to $5,653.34 at an interest rate of 5%. The lower the interest rate, the higher the present value of a future payment. <a class="xref" href="#rittenberg-ch13_s02_s02_t01">Table 13.1 "Time, Interest Rates, and Present Value"</a> gives present values of a payment of $15,000 at various interest rates and for various time periods.</li>
+        </ol>
+        <div class="table block" id="rittenberg-ch13_s02_s02_t01" frame="all">
+            <p class="title"><span class="title-prefix">Table 13.1</span> Time, Interest Rates, and Present Value</p>
+            <table cellpadding="0" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th colspan="5" align="center">Present Value of $15,000</th>
+                    </tr>
+                    <tr>
+                        <th align="center"></th>
+                        <th colspan="4" align="center">Time until payment</th>
+                    </tr>
+                    <tr>
+                        <th align="center">Interest rate (%)</th>
+                        <th align="center">5 years</th>
+                        <th align="center">10 years</th>
+                        <th align="center">15 years</th>
+                        <th align="center">20 years</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td align="center">5</td>
+                        <td align="right">$11,752.89</td>
+                        <td align="right">$9,208.70</td>
+                        <td align="right">$7,215.26</td>
+                        <td align="right">$5,653.34</td>
+                    </tr>
+                    <tr>
+                        <td align="center">10</td>
+                        <td align="right">9,313.82</td>
+                        <td align="right">5,783.15</td>
+                        <td align="right">3,590.88</td>
+                        <td align="right">2,229.65</td>
+                    </tr>
+                    <tr>
+                        <td align="center">15</td>
+                        <td align="right">7,457.65</td>
+                        <td align="right">3,707.77</td>
+                        <td align="right">1,843.42</td>
+                        <td align="right">916.50</td>
+                    </tr>
+                    <tr>
+                        <td align="center">20</td>
+                        <td align="right">6,028.16</td>
+                        <td align="right">2,422.58</td>
+                        <td align="right">973.58</td>
+                        <td align="right">391.26</td>
+                    </tr>
+                </tbody>
+            </table>
+                    <div class="caption">
+                <p class="para">The higher the interest rate and the longer the time until payment is made, the lower the present value of a future payment. The table below shows the present value of a future payment of $15,000 under different conditions. The present value of $15,000 to be paid in five years is $11,752.89 if the interest rate is 5%. Its present value is just $391.26 if it is to be paid in 20 years and the interest rate is 20%.</p>
+            </div>
+        </div>
+        <p class="para editable block" id="rittenberg-ch13_s02_s02_p15">The concept of present value can also be applied to a series of future payments. Suppose you have been promised $1,000 at the end of each of the next 5 years. Because each payment will occur at a different time, we calculate the present value of the series of payments by taking the value of each payment separately and adding them together. At an interest rate of 10%, the present value <em class="emphasis">P</em><sub class="subscript">0</sub> is:</p>
+        <span class="informalequation block">
+		<math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="rittenberg_ch13_s01_m010" display="block">
+		 <mrow>
+		  <msub>
+		   <mi>P</mi>
+		   <mtext>0</mtext>
+		  </msub>
+		  <mo>=</mo><mfrac>
+		   <mrow>
+		    <mi>$</mi><mn>1,000</mn>
+		   </mrow>
+		   <mrow>
+		    <mn>1.10</mn>
+		   </mrow>
+		  </mfrac>
+		  <mo>+</mo><mfrac>
+		   <mrow>
+		    <mi>$</mi><mn>1,000</mn>
+		   </mrow>
+		   <mrow>
+		    <msup>
+		     <mrow>
+		      <mo stretchy="false">(</mo><mn>1.10</mn><mo stretchy="false">)</mo>
+		     </mrow>
+		     <mn>2</mn>
+		    </msup>
+		   </mrow>
+		  </mfrac>
+		  <mo>+</mo><mfrac>
+		   <mrow>
+		    <mi>$</mi><mn>1,000</mn>
+		   </mrow>
+		   <mrow>
+		    <msup>
+		     <mrow>
+		      <mo stretchy="false">(</mo><mn>1.10</mn><mo stretchy="false">)</mo>
+		     </mrow>
+		     <mn>3</mn>
+		    </msup>
+		   </mrow>
+		  </mfrac>
+		  <mo>+</mo><mfrac>
+		   <mrow>
+		    <mi>$</mi><mn>1,000</mn>
+		   </mrow>
+		   <mrow>
+		    <msup>
+		     <mrow>
+		      <mo stretchy="false">(</mo><mn>1.10</mn><mo stretchy="false">)</mo>
+		     </mrow>
+		     <mn>4</mn>
+		    </msup>
+		   </mrow>
+		  </mfrac>
+		  <mo>+</mo><mfrac>
+		   <mrow>
+		    <mi>$</mi><mn>1,000</mn>
+		   </mrow>
+		   <mrow>
+		    <msup>
+		     <mrow>
+		      <mo stretchy="false">(</mo><mn>1.10</mn><mo stretchy="false">)</mo>
+		     </mrow>
+		     <mn>5</mn>
+		    </msup>
+		   </mrow>
+		  </mfrac>
+		  <mo>=</mo><mi>$</mi><mn>3,790.78</mn>
+		 </mrow>
+		</math>
+</span>
+        <p class="para editable block" id="rittenberg-ch13_s02_s02_p16">Interest rates can thus be used to compare the values of payments that will occur at different times. Choices concerning capital and natural resources require such comparisons, so you will find applications of the concept of present value throughout this chapter, but the concept of present value applies whenever costs and benefits do not all take place in the current period.</p>
+        <p class="para editable block" id="rittenberg-ch13_s02_s02_p17">State lottery winners often have a choice between a single large payment now or smaller payments paid out over a 25- or 30-year period. Comparing the single payment now to the present value of the future payments allows winners to make informed decisions. For example, in June 2005 Brad Duke, of Boise, Idaho, became the winner of one of the largest lottery prizes ever. Given the alternative of claiming the $220.3 million jackpot in 30 annual payments of $7.4 million or taking $125.3 million in a lump sum, he chose the latter. Holding unchanged all other considerations that must have been going through his mind, he must have thought his best rate of return would be greater than 4.17%. Why 4.17%? Using an interest rate of 4.17%, $125.3 million is equal to slightly less than the present value of the 30-year stream of payments. At all interest rates greater than 4.17%, the present value of the stream of benefits would be less than $125.3 million. At all interest rates less than 4.17%, the present value of the stream of payments would be more than $125.3 million. Our present value analysis suggests that if he thought the interest rate he could earn was more than 4.17%, he should take the lump sum payment, which he did.</p>
+        <div class="key_takeaways block" id="rittenberg-ch13_s02_s02_n01">
+            <h3 class="title">Key Takeaways</h3>
+            <ul class="itemizedlist" id="rittenberg-ch13_s02_s02_l02">
+                <li>People generally prefer to receive a specific payment now rather than to wait and receive it later.</li>
+                <li>Interest is a payment made to people who agree to postpone their use of wealth.</li>
+                <li>
+                    <p class="para" id="rittenberg-ch13_s02_s02_p20">We compute the present value, <em class="emphasis">P</em><sub class="subscript">0</sub>, of a sum to be received in <em class="emphasis">n</em> years, <em class="emphasis">P</em><sub class="subscript">n</sub>, as:</p>
+                    <span class="informalequation">
+			<math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="rittenberg_ch13_s01_m011" display="block">
+			 <mrow>
+			  <msub>
+			   <mi>P</mi>
+			   <mn>0</mn>
+			  </msub>
+			  <mo>=</mo><mfrac>
+			   <mrow>
+			    <msub>
+			     <mi>P</mi>
+			     <mi>n</mi>
+			    </msub>
+			   </mrow>
+			   <mrow>
+			    <msup>
+			     <mrow>
+			      <mo stretchy="false">(</mo><mn>1</mn><mo>+</mo><mi>r</mi><mo stretchy="false">)</mo>
+			     </mrow>
+			     <mi>n</mi>
+			    </msup>
+			   </mrow>
+			  </mfrac>
+			 </mrow>
+			</math>
+</span>
+                </li>
+                <li>The present value of a future payment will be greater the larger the payment, the sooner it is due, and the lower the rate of interest.</li>
+            </ul>
+        </div>
+        <div class="exercises editable block" id="rittenberg-ch13_s02_s02_n02">
+            <h3 class="title">Try It!</h3>
+            <p class="para" id="rittenberg-ch13_s02_s02_p22">Suppose your friend Sara asks you to lend her $5,000 so she can buy a used car. She tells you she can pay you back $5,200 in a year. Reliable Sara always keeps her word. Suppose the interest rate you could earn by putting the $5,000 in a savings account is 5%. What is the present value of her offer? Is it a good deal for you or not? What if the interest rate on your savings account is only 3%?</p>
+        </div>
+        <div class="callout block" id="rittenberg-ch13_s02_s02_n03">
+            <h3 class="title">Case in Point: Waiting for Death and Life Insurance</h3>
+
+            <p class="para" id="rittenberg-ch13_s02_s02_p23">It is a tale that has become all too familiar.</p>
+            <p class="para" id="rittenberg-ch13_s02_s02_p24">Call him Roger Johnson. He has just learned that his cancer is not treatable and that he has only a year or two to live. Mr. Johnson is unable to work, and his financial burdens compound his tragic medical situation. He has mortgaged his house and sold his other assets in a desperate effort to get his hands on the cash he needs for care, for food, and for shelter. He has a life insurance policy, but it will pay off only when he dies. If only he could get some of that money sooner…</p>
+            <p class="para" id="rittenberg-ch13_s02_s02_p25">The problem facing Mr. Johnson has spawned a market solution—companies and individuals that buy the life insurance policies of the terminally ill. Mr. Johnson could sell his policy to one of these companies or individuals and collect the purchase price. The buyer takes over his premium payments. When he dies, the company will collect the proceeds of the policy.</p>
+            <p class="para" id="rittenberg-ch13_s02_s02_p26">The industry is called the viatical industry (the term <em class="emphasis">viatical</em> comes from <em class="emphasis">viaticum</em>, a Christian sacrament given to a dying person). It provides the terminally ill with access to money while they are alive; it provides financial investors a healthy interest premium on their funds.</p>
+            <p class="para" id="rittenberg-ch13_s02_s02_p27">It is a chilling business. Potential buyers pore over patient’s medical histories, studying T-cell counts and other indicators of a patient’s health. From the buyer’s point of view, a speedy death is desirable, because it means the investor will collect quickly on the purchase of a patient’s policy.</p>
+            <p class="para" id="rittenberg-ch13_s02_s02_p28">A patient with a life expectancy of less than six months might be able to sell his or her life insurance policy for 80% of the face value. A $200,000 policy would thus sell for $160,000. A person with a better prognosis will collect less. Patients expected to live two years, for example, might get only 60% of the face value of their policies.</p>
+            <p class="para" id="rittenberg-ch13_s02_s02_p29">Are investors profiting from the misery of others? Of course they are. But, suppose that investors refused to take advantage of the misfortune of the terminally ill. That would deny dying people the chance to acquire funds that they desperately need. As is the case with all voluntary exchange, the viatical market creates win-win situations. Investors “win” by earning high rates of return on their investment. And the dying patient? He or she is in a terrible situation, but the opportunity to obtain funds makes that person a “winner” as well.</p>
+            <p class="para" id="rittenberg-ch13_s02_s02_p30">Kim D. Orr, a former agent with Life Partners Inc. (<a class="link" href="www.lifepartnersinc.com">www.lifepartnersinc.com</a>), one of the leading firms in the viatical industry, recalled a case in his own family. “Some years ago, I had a cousin who died of AIDS. He was, at the end, destitute and had to rely totally on his family for support. Today, there is a broad market with lots of participants, and a patient can realize a high fraction of the face value of a policy on selling it. The market helps buyers and patients alike.”</p>
+            <p class="para" id="rittenberg-ch13_s02_s02_p31">In recent years, this industry has been renamed the life settlements industry, with policy transfers being offered to healthier, often elderly, policyholders. These healthier individuals are sometimes turning over their policies for a payment to third parties who pay the premiums and then collect the benefit when the policyholders die. Expansion of this practice has begun to raise costs for life insurers, who assumed that individuals would sometimes let their policies lapse, with the result that the insurance company does not have to pay claims on them. Businesses buying life insurance policies are not likely to let them lapse.</p>
+            <div class="copyright">
+                <p class="para">Sources: Personal Interview and Liam Pleven and Rachel Emma Silverman, “Investors Seek Profit in Strangers’ Deaths”, <em class="emphasis">The Wall Street Journal Online</em>, 2 May 2006, p. C1.</p>
+            </div>
+        </div>
+        <div class="exercises block" id="rittenberg-ch13_s02_s02_n04">
+            <h3 class="title">Answer to Try It! Problem</h3>
+            <p class="para" id="rittenberg-ch13_s02_s02_p32">The present value of $5,200 payable in a year with an interest rate of 5% is:</p>
+            <span class="informalequation">
+			<math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="rittenberg_ch13_s01_m012" display="block">
+			 <mrow>
+			  <msub>
+			   <mi>P</mi>
+			   <mn>0</mn>
+			  </msub>
+			  <mo>=</mo><mfrac>
+			   <mrow>
+			    <mi>$</mi><mn>5,200</mn>
+			   </mrow>
+			   <mrow>
+			    <msup>
+			     <mrow>
+			      <mo stretchy="false">(</mo><mn>1</mn><mo>+</mo><mn>0.05</mn><mo stretchy="false">)</mo>
+			     </mrow>
+			     <mn>1</mn>
+			    </msup>
+			   </mrow>
+			  </mfrac>
+			  <mo>=</mo><mi>$</mi><mn>4,952.38</mn>
+			 </mrow>
+			</math>
+</span>
+            <p class="para" id="rittenberg-ch13_s02_s02_p33">Since the present value of $5,200 is less than the $5,000 Sara has asked you to lend her, you would be better off refusing to make the loan. Another way of evaluating the loan is that Sara is offering a return on your $5,000 of 200/5,000 = 4%, while the bank is offering you a 5% return. On the other hand, if the interest rate that your bank is paying is 3%, then the present value of what Sara will pay you in a year is:</p>
+            <span class="informalequation">
+			<math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="rittenberg_ch13_s01_m013" display="block">
+			 <mrow>
+			  <msub>
+			   <mi>P</mi>
+			   <mn>0</mn>
+			  </msub>
+			  <mo>=</mo><mfrac>
+			   <mrow>
+			    <mi>$</mi><mn>5,200</mn>
+			   </mrow>
+			   <mrow>
+			    <msup>
+			     <mrow>
+			      <mo stretchy="false">(</mo><mn>1</mn><mo>+</mo><mn>0.03</mn><mo stretchy="false">)</mo>
+			     </mrow>
+			     <mn>1</mn>
+			    </msup>
+			   </mrow>
+			  </mfrac>
+			  <mo>=</mo><mi>$</mi><mn>5,048.54</mn>
+			 </mrow>
+			</math>
+</span>
+            <p class="para" id="rittenberg-ch13_s02_s02_p34">With your bank only paying a 3% return, Sara’s offer looks like a good deal.</p>
+        </div>
+    </div>
+</div>
+
+  </div>
+  
+  <div id=navbar-bottom class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s15-04-review-and-practice.html"><img src="shared/images/batch-left.png"></a> <a href="s15-04-review-and-practice.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s16-02-interest-rates-and-capital.html">Next Section</a> <a href="s16-02-interest-rates-and-capital.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  </div>
+  <script type="text/javascript" src="shared/book.js"></script>
+  
+  <script type="text/javascript" src="https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=MML_HTMLorMML"></script>
+  
+  
+</body>
+</html>
